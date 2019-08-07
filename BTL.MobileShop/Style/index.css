@@ -1,0 +1,139 @@
+﻿/*Style phần khoảng giá*/
+.p-wrap {
+    width: 100%;
+}
+.p-mean-price {
+    display: flex;
+    flex-direction: column;
+    height: 219px;
+    padding: 25px 0 30px;
+    background-color: #ffffff;
+}
+    .p-mean-price h1 {
+        text-align: center;
+        margin: 0 0 22px 0;
+        font-size: 16px;
+        color: #4a4a4a;
+        text-transform: uppercase;
+    }
+    .p-mean-price ul {
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+        .p-mean-price ul li {
+            width: 14.66%;
+            text-align: center;
+        }
+            .p-mean-price ul li a {
+                display: inline-block;
+                width: 100px;
+                text-decoration: none;
+            }
+                .p-mean-price ul li a:hover span {
+                    border: 1px solid #4f4f4f;
+                }
+                .p-mean-price ul li a span {
+                    height: 77px;
+                    width: 77px;
+                    display: inline-block;
+                    margin-bottom: 15px;
+                    padding: 10px;
+                    border: 1px solid #dcdcdc;
+                    border-radius: 100%;
+                }
+                    .p-mean-price ul li a span img{
+                        width: 90%;
+                    }
+                .p-mean-price ul li a p {
+                        margin: 0;
+                        text-align: center;
+                        font-size: 14px;
+                        color: #4a4a4a;
+                }
+.icon-all {
+    width: 37px;
+    height: 12px;
+    display: inline-block;
+    background-image: url(../Content/icon/icondt.png);
+    background-position: -152px -183px;
+    background-repeat: no-repeat;
+    margin: 24px 7px 20px 11px;
+}
+
+/*Style phần nhãn hàng*/
+.p-brand {
+    display: flex;
+    height: 132px;
+    margin: 20px 0 20px 0;
+    background-color: #fff;
+}
+.brand-item {
+    width: 14.28%;
+    text-align: center;
+    padding-top: 22px;
+}
+    .brand-item a {
+        height: 82px;
+        display: inline-block;
+        text-decoration: none;
+        color: #4a4a4a;
+        font-size: 14px;
+    }
+
+/*Wrap Datalist sản phẩm*/
+
+.p-prolight h2 a {
+    font-size: 20px;
+    color: #3d3d3d;
+    font-weight: normal;
+}
+.prolight-grid {
+    height: 366px;
+    background-color: #fff;
+}
+
+    .prolight-grid > span {
+        display: flex;
+        height: 100%;
+    }
+
+        .prolight-grid > span > span {
+            width: 240px;
+            height: 100%;
+        }
+
+            .prolight-grid > span > span:hover {
+                box-shadow: 1px 2px 7px 0 rgba(113, 58, 58, 0.21);
+            }
+
+img.product-img {
+    margin: 23px;
+}
+
+.product-name {
+    font-size: 17px;
+    padding: 10px 24px;
+}
+
+.product-price {
+    font-size: 17px;
+    padding: 0px 24px;
+}
+
+span.dis-price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #383838;
+}
+
+span.reg-price {
+    text-decoration: line-through;
+    font-size: 12px;
+}
+.product-link {
+    text-align: center;
+    padding-top: 25px;
+}

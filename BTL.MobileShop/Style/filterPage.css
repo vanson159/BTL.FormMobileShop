@@ -1,0 +1,101 @@
+﻿/*Phần dàn trang filter*/
+.f-wrap {
+    display: flex;
+    width: 1200px;
+}
+.f-filter {
+    height: 500px;
+    width: 230px;
+    background-color: #fff;
+    margin-right: 15px;
+    display: inline-flex;
+    flex-direction: column;
+}
+.f-product {
+    flex-grow: 1;
+    background-color: #fff;
+    height: auto;
+}
+/*Style cho từng Item trong data list*/
+
+img.product-img {
+    margin: 7px 23px;
+}
+.f-product tbody tr > td {
+    width: 240px;
+    height: 480px;
+}
+    .f-product tbody tr > td:hover {
+        box-shadow: 1px 2px 7px 0 rgba(113, 58, 58, 0.21);
+        cursor:pointer;
+    }
+.product-name {
+    font-size: 14px;
+    padding: 10px 12px;
+}
+
+.product-price {
+    font-size: 17px;
+    padding: 0px 12px;
+}
+.product-option {
+    padding: 6px 12px;
+    line-height: 18px;
+    font-size: 12px;
+    color: #7e7e7e;
+}
+    .product-option span {
+        font-weight: bold;
+    }
+
+span.dis-price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #383838;
+}
+
+span.reg-price {
+    /*text-decoration: line-through;*/
+    font-size: 14px;
+    /*color: #7e7e7e;*/
+}
+
+.product-link a {
+    margin-left: 68px;
+    font-size: 13px;
+}
+
+.f-product-paging {
+    text-align: center;
+    padding: 5px 0 5px 0;
+    background-color: cornflowerblue;
+    color: white;
+}
+    .f-product-paging input {
+        border: none;
+        background-color: #4871ad;
+        height: 30px;
+        width: 85px;
+        color: white;
+        cursor: pointer;
+        margin: 12px;
+        padding: 6px;
+        border-radius: 12px;
+    }
+
+.option-rangel input {
+    height: 25px;
+    margin-left: 11px;
+    border: none;
+    background-color: #4871ad;
+    color: white;
+    border-radius: 5px;
+}
+.option-rangel input {
+    height: 25px;
+    margin-left: 11px;
+    border: none;
+    background-color: #4871ad;
+    color: white;
+    border-radius: 5px;
+}

@@ -1,0 +1,111 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SiteGrid.master.cs" Inherits="BTL.MobileShop.SiteGrid" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="Style/master-page-grid.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="page">
+            <!--HEADER PAGE-->
+            <header>
+                <div class="header-nav">
+                    <i class="hi-toggle">
+                    </i>
+                    <div class="nav-bar" style="display:none">
+                        <div><a href="Index.aspx">Trang chủ</a></div>
+                        <div><a href="FilterPage.aspx">Điện thoại hot</a></div>
+                        <div><a href="FilterPage.aspx">Điện thoại mới</a></div>
+                        <div><a href="FilterPage.aspx">Điện thoại nhiếp ảnh</a></div>
+                        <div class="nav-bar-child"><a href="FilterPage.aspx" >Hãng</a>
+                            <div class="nav-bar-inside" style="display:none">
+                                <div><a href="FilterPage.aspx">Samsung</a></div>
+                                <div><a href="FilterPage.aspx">Apple</a></div>
+                                <div><a href="FilterPage.aspx">Oppo</a></div>
+                                <div><a href="FilterPage.aspx">Huawei</a></div>
+                                <div><a href="FilterPage.aspx">Xiaomi</a></div>
+                                 <div><a href="FilterPage.aspx">VSmart</a></div>
+                                <div><a href="FilterPage.aspx">Nokia</a></div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="header-logo">
+                    <a href="index.aspx"><img src="../Content/icon/telephony.png" /></i></a>
+                    
+                </div>
+                <div class="header-search">
+                    <asp:TextBox runat="server" ID="TextBox_Search" CssClass="txt-search"></asp:TextBox>
+                    <asp:Button runat="server" ID="Button_Search" OnClick="Button_Search_Click" CssClass="btn-search" Text="Search"/>
+                </div>
+
+                <div class="header-content">
+                    <div class="header-content-manage">
+                        <a href="#">
+                            <i class="hi-manage"></i>
+                            <span style="margin-top: 3px;">Trang bán hàng</span>
+                        </a>
+                    </div>
+                    <div class="header-content-cart">
+                        <a href="CartPage.aspx">
+                            <i class="hi-cart"></i>
+                            <span style="margin-top: 3px;">Giỏ hàng</span>
+                            <b class="count-cart" style="display: none">0</b>
+                        </a>
+                    </div>
+                    <div class="header-content-tk">
+                        <div class="lbl_nameAcc"><asp:Label  runat="server" ID="lbl_nameAcc"></asp:Label></div>
+                        <div class="nav-tk" style="display:none">
+                            <a href="PageAccount.aspx?pageState=signin" class="nav-tk-dk">Đăng kí</a>
+                            <a href="PageAccount.aspx?pageState=login" class="nav-tk-dn">Đăng nhập</a>
+                            <a href="Index.aspx?login=out"  class="nav-tk-dx">Đăng xuất</a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!--Phần main page-->
+            <main>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </main>
+            <!--Phần footer page-->
+            <footer>
+                <div class="f-intro">
+                    <h3>Về chúng tôi</h3>
+                    <p>
+                        Công ty Cổ phần Đầu tư Thế Giới Di Động (MWG) là nhà bán lẻ số 1 Việt Nam về doanh thu và lợi nhuận, với mạng lưới hơn 2200 cửa hàng trên toàn quốc. MWG vận hành các chuỗi bán lẻ thegioididong.com, Điện Máy Xanh, Bách Hoá Xanh. Ngoài ra, MWG đã mở rộng ra thị trường nước ngoài với chuỗi bán lẻ Bigphone tại Campuchia.
+                    </p>
+                </div>
+                <div class="f-contact">
+                    <h3>Liên hệ</h3>
+                    <p>
+                        Văn phòng điều hành:
+                        <br />
+                        Công ty TNHH Một Thành Viên Công Nghệ Thông Tin Thế Giới Di Động Lô T2-1.2 đường D1, Khu Công Nghệ Cao, Phường Tân Phú, Quận 9, TP.HCM<br />
+                        Số điện thoại: 028 38125960<br />
+                        E-mail: investor@thegioididong.com<br />
+                    </p>
+                </div>
+                <div class="f-address">
+                    <h3>Địa chỉ</h3>
+                    <p>
+                        Cơ sở 1: 261 Khánh Hội, P5, Q4, TP. Hồ Chí Minh
+                        <br />
+                        Cơ sở 2: Tầng 1, Nhà A2, Trường Đại học sân khấu điện ảnh Hà Nội, Đường Hồ Tùng Mậu, Quận Cầu Giấy, Hà Nội
+                        <br />
+                        Cơ sở 3: Tầng 7, số 51 , Đường Lê Đại Hành, Phường Lê Đại Hành, quận Hai Bà Trưng Hà Nội
+                    </p>
+                </div>
+            </footer>
+        </div>
+    </form>
+    <script src="../Scripts/Page/master-page.js"></script>
+</body>
+</html>

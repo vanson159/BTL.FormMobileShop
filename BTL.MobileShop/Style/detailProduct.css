@@ -1,0 +1,151 @@
+﻿/*Dàn trang*/
+.d-wrap {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+}
+
+.d-name {
+    height: 81px;
+    padding: 25px 40px;
+    color: #3d3d3d;
+    font-size: 24px;
+    background-color: #fff;
+}
+
+.d-content {
+    display: flex;
+    height: 626px;
+    margin: 2px 0 15px 0;
+}
+.d-content-image {
+    width: 465px;
+    height: auto;
+    background-color: #fff;
+}
+    .d-content-image img {
+        width: 100%;
+        height: auto;
+    }
+/*----------------CỘT GIỮA-------------------------*/
+.d-content-price {
+    width: 452px;
+    background-color: #fff;
+    margin-left: 2px;
+    padding-left: 11px;
+}
+.content-price {
+    height: 52px;
+    padding: 12px 0px;
+}
+span.dis-price {
+    color: #4c4c4c;
+    font-size: 26px;
+}
+span.reg-price {
+    margin-left: 12px;
+    text-decoration: line-through;
+    color: #7e7e7e;
+    font-size: 16px;
+}
+p.ft-ghoh {
+    position: relative;
+    width: 422px;
+    height: 32px;
+    margin: 0;
+    font-size: 14px;
+    font-weight: normal;
+    color: #4f4f4f;
+    padding: 7px 5px 5px 40px;
+    background-color: #f8f8f8;
+    border: solid 1px #eaeaea;
+    margin-bottom: 10px;
+}
+.ft-ghoh::before {
+    content: "";
+    display: inline-block;
+    width: 27px;
+    height: 21px;
+    background-image: url(../Content/icon/chronometer.png);
+    position: absolute;
+    top: 5px;
+    left: 8px;
+}
+.content-sale {
+    width: 422px;
+    height: 135px;
+    border: 1px dashed #d7d7d7;
+    margin-bottom: 44px;
+}
+    .content-sale > p {
+        padding: 4px 10px;
+        margin: 0;
+        font-weight: bold;
+        color: #fff;
+        background: #34a105;
+        border-bottom: 1px dashed #d7d7d7;
+    }
+.sale-main {
+    font-size: 13px;
+    height: 104px;
+    padding: 11px 15px 5px 15px;
+}
+    .sale-main ul {
+        padding: 0;
+        margin: 0px 21px 8px;
+    }
+.content-add {
+    display: flex;
+    flex-direction: column;
+}
+.button-add input {
+    width: 422px;
+    height: 60px;
+    font-size: 22px;
+    background-color: #d0021b;
+    color: white;
+    border: none;
+    margin-bottom: 15px;
+}
+.button-modal {
+    display: flex;
+}
+    .button-modal div {
+        width: 204px;
+        height: 60px;
+        background-color: #337ab7;
+        font-size: 14px;
+        color: white;
+        padding-top: 13px;
+        text-align: center;
+    }
+    .button-modal div:first-child {
+        margin-right: 14px;
+    }
+.d-content-option {
+    background-color: #fff;
+    margin-left: 2px;
+    line-height: 35px;
+    width: 310px;
+    font-size: 13px;
+}
+    .d-content-option div {
+        width: 310px;
+        height: 52px;
+        color: #3d3d3d;
+        font-size: 18px;
+        padding: 11px 11px;
+        border-bottom: 2px solid #f3f3f3;
+    }
+    .d-content-option span {
+        margin-left: 12px;
+        font-weight: 700;
+    }
+/*---------------CỘT PHẢI------------------*/
+.d-content-option {
+    padding: 15px;
+    background-color: #fff;
+    margin-left: 2px;
+    width: 310px;
+}
+

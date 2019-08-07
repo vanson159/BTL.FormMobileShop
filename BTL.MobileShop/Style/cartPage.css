@@ -1,0 +1,106 @@
+﻿.c-page {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+}
+.cart-content {
+    height: auto;
+    background-color: #fff;
+    padding: 6px 20px 25px 20px;
+}
+h2 {
+    padding: 7px;
+    margin: 9px 0;
+    border-bottom: 1px solid #a59f9f;
+    font-style: normal;
+}
+
+.cart-info {
+    background-color: #fff;
+    margin: 6px 0 0 0;
+    padding: 5px;
+    height:auto;
+}
+    .cart-info div {
+        height: 61px;
+        display: flex;
+        flex-direction: column;
+        padding: 0px 135px;
+    }
+        .cart-info div input {
+            height: 31px;
+            padding: 8px;
+            font-size: 16px;
+            margin-top: 2px;
+        }
+.info-note {
+    height: 105px !important;
+}
+    .info-note textarea {
+        height: 77px;
+        font-size: 16px;
+        padding: 8px;
+        font-family: Arial,Helvetica,sans-serif;
+    }
+.cart-info button {
+    height: 37px;
+    background-color: #3dc018;
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    margin: 25px 0 14px 340px;
+}
+/*Phần Style cho giỏ hàng*/
+.cart-content img{
+    width:100%;
+}
+td.item-name {
+    font-weight: 700;
+    width: 290px;
+    padding-left: 25px;
+    text-align: left;
+}
+td.item-price {
+    width: 128px;
+    text-align: center;
+}
+td.item-delete {
+    width: 60px;
+    text-align: center;
+}
+
+td.item-amount {
+    display: flex;
+    border: none;
+    justify-content: center;
+    margin-top:37px;
+}
+
+.txt-amount {
+    float: left;
+    width: 40px;
+    height: 28px;
+    text-align: center;
+    font-size: 13px;
+    color: #555;
+    border: solid 1px #e0e0e0;
+    border-left: none;
+    border-right: none;
+}
+
+span.up-amount, span.down-amount {
+    float: left;
+    cursor: pointer;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    color: #828282;
+    font-size: 22px;
+    background-color: #f8f8f8;
+    border: solid 1px #dfdfdf;
+    cursor: pointer;
+}
+.cart-content table, tr, td, th {
+    border: none;
+}
